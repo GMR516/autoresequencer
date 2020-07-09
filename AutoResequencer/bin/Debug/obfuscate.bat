@@ -1,0 +1,1 @@
+Obfuscar.Console.exe config.xml

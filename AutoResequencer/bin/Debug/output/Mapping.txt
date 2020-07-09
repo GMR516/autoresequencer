@@ -1,0 +1,137 @@
+Renamed Types:
+
+[AutoResequencer]<>f__AnonymousType0`2 -> [AutoResequencer]A.A`2
+{
+	[AutoResequencer]<>f__AnonymousType0`2::get_OrgStr[0]( ) -> A
+	[AutoResequencer]<>f__AnonymousType0`2::get_SortStr[0]( ) -> a
+
+	[AutoResequencer]<>f__AnonymousType0`2::.ctor[2]( !0, !1 ) skipped:  special name
+	[AutoResequencer]<>f__AnonymousType0`2::Equals[1]( [mscorlib]System.Object ) skipped:  external base class or interface
+	[AutoResequencer]<>f__AnonymousType0`2::GetHashCode[0]( ) skipped:  external base class or interface
+	[AutoResequencer]<>f__AnonymousType0`2::ToString[0]( ) skipped:  external base class or interface
+
+	<OrgStr>j__TPar [AutoResequencer]<OrgStr>j__TPar <>f__AnonymousType0`2::<OrgStr>i__Field -> A
+	<SortStr>j__TPar [AutoResequencer]<SortStr>j__TPar <>f__AnonymousType0`2::<SortStr>i__Field -> A
+
+	A [AutoResequencer]A <>f__AnonymousType0`2::OrgStr -> dropped
+	a [AutoResequencer]a <>f__AnonymousType0`2::SortStr -> dropped
+}
+
+[AutoResequencer]MainClass -> [AutoResequencer]A.a
+{
+	[AutoResequencer]MainClass::Main[1]( [mscorlib]System.String[] ) -> A
+	[AutoResequencer]MainClass::CLI[1]( [mscorlib]System.String[] ) -> a
+	[AutoResequencer]MainClass::SpecificExtensions[1]( [mscorlib]System.String ) -> A
+	[AutoResequencer]MainClass::GetFiles[0]( ) -> A
+	[AutoResequencer]MainClass::Insert[2]( [mscorlib]System.Int32, [mscorlib]System.Int32 ) -> A
+	[AutoResequencer]MainClass::Switch[2]( [mscorlib]System.Int32, [mscorlib]System.Int32 ) -> a
+	[AutoResequencer]MainClass::RemoveNonLetters[1]( [mscorlib]System.String ) -> a
+	[AutoResequencer]MainClass::RemoveNonNumbers[1]( [mscorlib]System.String ) -> B
+	[AutoResequencer]MainClass::get_AssemblyDirectory[0]( ) -> a
+
+	[AutoResequencer]MainClass::.ctor[0]( ) skipped:  special name
+
+	System.Boolean [AutoResequencer]System.Boolean MainClass::shouldInsert -> A
+	System.Boolean [AutoResequencer]System.Boolean MainClass::shouldSwitch -> a
+	System.Boolean [AutoResequencer]System.Boolean MainClass::moveDoubleExtensionFiles -> B
+	System.Boolean [AutoResequencer]System.Boolean MainClass::recursiveSearch -> b
+	System.String [AutoResequencer]System.String MainClass::objectName -> A
+	System.String[] [AutoResequencer]System.String[] MainClass::specificExtensions -> A
+	System.String[] [AutoResequencer]System.String[] MainClass::files -> a
+	System.Collections.Generic.List`1<System.String> [AutoResequencer]System.Collections.Generic.List`1<System.String> MainClass::filesList -> A
+
+	System.String [AutoResequencer]System.String MainClass::AssemblyDirectory -> dropped
+}
+
+[AutoResequencer]Costura.AssemblyLoader -> [AutoResequencer]A.B
+{
+	[AutoResequencer]Costura.AssemblyLoader::CultureToString[1]( [mscorlib]System.Globalization.CultureInfo ) -> A
+	[AutoResequencer]Costura.AssemblyLoader::ReadExistingAssembly[1]( [mscorlib]System.Reflection.AssemblyName ) -> A
+	[AutoResequencer]Costura.AssemblyLoader::CopyTo[2]( [mscorlib]System.IO.Stream, [mscorlib]System.IO.Stream ) -> A
+	[AutoResequencer]Costura.AssemblyLoader::LoadStream[1]( [mscorlib]System.String ) -> A
+	[AutoResequencer]Costura.AssemblyLoader::LoadStream[2]( [mscorlib]System.Collections.Generic.Dictionary`2<[mscorlib]System.String,[mscorlib]System.String>, [mscorlib]System.String ) -> A
+	[AutoResequencer]Costura.AssemblyLoader::ReadStream[1]( [mscorlib]System.IO.Stream ) -> A
+	[AutoResequencer]Costura.AssemblyLoader::ReadFromEmbeddedResources[3]( [mscorlib]System.Collections.Generic.Dictionary`2<[mscorlib]System.String,[mscorlib]System.String>, [mscorlib]System.Collections.Generic.Dictionary`2<[mscorlib]System.String,[mscorlib]System.String>, [mscorlib]System.Reflection.AssemblyName ) -> A
+	[AutoResequencer]Costura.AssemblyLoader::ResolveAssembly[2]( [mscorlib]System.Object, [mscorlib]System.ResolveEventArgs ) -> A
+	[AutoResequencer]Costura.AssemblyLoader::Attach[0]( ) -> A
+
+	[AutoResequencer]Costura.AssemblyLoader::.cctor[0]( ) skipped:  special name
+
+	System.Object [AutoResequencer]System.Object Costura.AssemblyLoader::nullCacheLock -> A
+	System.Collections.Generic.Dictionary`2<System.String,System.Boolean> [AutoResequencer]System.Collections.Generic.Dictionary`2<System.String,System.Boolean> Costura.AssemblyLoader::nullCache -> A
+	System.Collections.Generic.Dictionary`2<System.String,System.String> [AutoResequencer]System.Collections.Generic.Dictionary`2<System.String,System.String> Costura.AssemblyLoader::assemblyNames -> A
+	System.Collections.Generic.Dictionary`2<System.String,System.String> [AutoResequencer]System.Collections.Generic.Dictionary`2<System.String,System.String> Costura.AssemblyLoader::symbolNames -> a
+	System.Int32 [AutoResequencer]System.Int32 Costura.AssemblyLoader::isAttached -> A
+}
+
+[AutoResequencer]ProcessedByFody -> [AutoResequencer]A.b
+{
+	System.String [AutoResequencer]System.String ProcessedByFody::FodyVersion -> A
+	System.String [AutoResequencer]System.String ProcessedByFody::Costura -> a
+}
+
+[AutoResequencer]MainClass/<>c -> [AutoResequencer]A.a/A
+{
+	[AutoResequencer]MainClass/<>c::<GetFiles>b__11_4[1]( [mscorlib]System.String ) -> A
+	[AutoResequencer]MainClass/<>c::<GetFiles>b__11_5[1]( [mscorlib]System.String ) -> a
+	[AutoResequencer]MainClass/<>c::<GetFiles>b__11_6[1]( [mscorlib]System.String ) -> B
+	[AutoResequencer]MainClass/<>c::<GetFiles>b__11_7[1]( [mscorlib]System.String ) -> b
+	[AutoResequencer]MainClass/<>c::<GetFiles>b__11_0[1]( [mscorlib]System.String ) -> C
+	[AutoResequencer]MainClass/<>c::<GetFiles>b__11_1[1]( [mscorlib]System.String ) -> c
+	[AutoResequencer]MainClass/<>c::<GetFiles>b__11_2[1]( [mscorlib]System.String ) -> D
+	[AutoResequencer]MainClass/<>c::<GetFiles>b__11_3[1]( [mscorlib]System.String ) -> d
+
+	[AutoResequencer]MainClass/<>c::.cctor[0]( ) skipped:  special name
+	[AutoResequencer]MainClass/<>c::.ctor[0]( ) skipped:  special name
+
+	MainClass/<>c [AutoResequencer]MainClass/<>c MainClass/<>c::<>9 -> A
+	System.Func`2<System.String,System.Boolean> [AutoResequencer]System.Func`2<System.String,System.Boolean> MainClass/<>c::<>9__11_4 -> A
+	System.Func`2<System.String,System.Boolean> [AutoResequencer]System.Func`2<System.String,System.Boolean> MainClass/<>c::<>9__11_5 -> a
+	System.Func`2<System.String,System.Boolean> [AutoResequencer]System.Func`2<System.String,System.Boolean> MainClass/<>c::<>9__11_6 -> B
+	System.Func`2<System.String,System.Boolean> [AutoResequencer]System.Func`2<System.String,System.Boolean> MainClass/<>c::<>9__11_7 -> b
+	System.Func`2<System.String,System.Boolean> [AutoResequencer]System.Func`2<System.String,System.Boolean> MainClass/<>c::<>9__11_0 -> C
+	System.Func`2<System.String,System.Boolean> [AutoResequencer]System.Func`2<System.String,System.Boolean> MainClass/<>c::<>9__11_1 -> c
+	System.Func`2<System.String,System.Boolean> [AutoResequencer]System.Func`2<System.String,System.Boolean> MainClass/<>c::<>9__11_2 -> D
+	System.Func`2<System.String,System.Boolean> [AutoResequencer]System.Func`2<System.String,System.Boolean> MainClass/<>c::<>9__11_3 -> d
+}
+
+[AutoResequencer]CommonSense/<>c__DisplayClass0_0 -> [AutoResequencer]CommonSense/A
+{
+	[AutoResequencer]CommonSense/<>c__DisplayClass0_0::<OrderByNumber>b__1[1]( [mscorlib]System.String ) -> A
+	[AutoResequencer]CommonSense/<>c__DisplayClass0_0::<OrderByNumber>b__4[1]( [System]System.Text.RegularExpressions.Match ) -> A
+
+	[AutoResequencer]CommonSense/<>c__DisplayClass0_0::.ctor[0]( ) skipped:  special name
+
+	System.Int32 [AutoResequencer]System.Int32 CommonSense/<>c__DisplayClass0_0::maxLen -> A
+	System.Text.RegularExpressions.MatchEvaluator [AutoResequencer]System.Text.RegularExpressions.MatchEvaluator CommonSense/<>c__DisplayClass0_0::<>9__4 -> A
+}
+
+[AutoResequencer]CommonSense/<>c -> [AutoResequencer]CommonSense/a
+{
+	[AutoResequencer]CommonSense/<>c::<OrderByNumber>b__0_0[1]( [mscorlib]System.String ) -> A
+	[AutoResequencer]CommonSense/<>c::<OrderByNumber>b__0_2[1]( [AutoResequencer].<>f__AnonymousType0`2<[mscorlib]System.String,[mscorlib]System.String> ) -> A
+	[AutoResequencer]CommonSense/<>c::<OrderByNumber>b__0_3[1]( [AutoResequencer].<>f__AnonymousType0`2<[mscorlib]System.String,[mscorlib]System.String> ) -> a
+
+	[AutoResequencer]CommonSense/<>c::.cctor[0]( ) skipped:  special name
+	[AutoResequencer]CommonSense/<>c::.ctor[0]( ) skipped:  special name
+
+	CommonSense/<>c [AutoResequencer]CommonSense/<>c CommonSense/<>c::<>9 -> A
+	System.Func`2<System.String,System.Int32> [AutoResequencer]System.Func`2<System.String,System.Int32> CommonSense/<>c::<>9__0_0 -> A
+	System.Func`2<<>f__AnonymousType0`2<System.String,System.String>,System.String> [AutoResequencer]System.Func`2<<>f__AnonymousType0`2<System.String,System.String>,System.String> CommonSense/<>c::<>9__0_2 -> A
+	System.Func`2<<>f__AnonymousType0`2<System.String,System.String>,System.String> [AutoResequencer]System.Func`2<<>f__AnonymousType0`2<System.String,System.String>,System.String> CommonSense/<>c::<>9__0_3 -> a
+}
+
+Skipped Types:
+
+[AutoResequencer]CommonSense skipped:  KeepPublicApi option in configuration
+{
+
+	[AutoResequencer]CommonSense::OrderByNumber[1]( [mscorlib]System.Collections.Generic.IEnumerable`1<[mscorlib]System.String> ) skipped:  KeepPublicApi option in configuration
+}
+
+Renamed Resources:
+
+
+Skipped Resources:
+
+costura.colorful.console.dll.compressed (no clear new name)
