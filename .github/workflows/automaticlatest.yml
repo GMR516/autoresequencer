@@ -1,4 +1,4 @@
-name: .NET Core
+name: Automatic Latest Version Build
 
 on:
   push:
@@ -30,5 +30,5 @@ jobs:
     - name: Upload Artifact
       uses: actions/upload-artifact@v1.0.0
       with:
-        name: test
-        path: obj\x86\Debug\AutoResequencer.exe
+        name: AutoResequencer_bleeding_edge
+        path: AutoResequencer\obj\x86\Debug\AutoResequencer.exe
