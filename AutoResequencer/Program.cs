@@ -110,9 +110,11 @@ class MainClass
             Console.WriteLine("HELP", Color.Red);
             //TODO: Refactor the help text.
             //https://stackoverflow.com/questions/9725675/is-there-a-standard-format-for-command-line-shell-help-text
-            //Console.WriteLine("-insert | Runs the \"insert\" function. Usage: -insert [0] [1] [2] [3], where [0] is the prefix of the files you want to work with (string), [1] is the number of the file(s) to insert (int), and [2] is the number to insert it into (int). [3] is optional, and is a boolean (y/n) that defaults to false (n). It is used to denote whether to move additional extension files like \"file.png.meta\". If yes or true, will move files with additional extensions like that. If no or false, it will leave them alone.\n");
-            //Console.WriteLine("-switch | Runs the \"switch\" function. Usage: -switch [0] [1] [2] [3], where [0] is the prefix of the files you want to work with (string), [1] is the first number of the files to switch (int), and [2] is the second number to switch the files with (int). [3] is optional, and is a boolean (y/n) that defaults to false (n). It is used to denote whether to move additional extension files like \"file.png.meta\". If yes or true, will move files with additional extensions like that. If no or false, it will leave them alone.\n");
-            Console.WriteLine("-help | --help | -h | --h = This command.\n");
+            Console.WriteLine("-insert = Runs the \"insert\" function. Usage: -insert [0] [1] [2] [3], where [0] is the prefix of the files you want to work with (string, set to \"nn\" (case-insensitive)  for no name and just numbered files [temporary hack]), [1] is the number of the file(s) to insert (int), and [2] is the number to insert it into (int). [3] is optional, and is a boolean (y/n) that defaults to false (n). It is used to denote whether to move additional extension files like \"file.png.meta\". If yes or true, will move files with additional extensions like that. If no or false, it will leave them alone.\n");
+            Console.WriteLine("\n\n");
+            Console.WriteLine("-switch = Runs the \"switch\" function. Usage: -switch [0] [1] [2] [3], where [0] is the prefix of the files you want to work with (string, set to \"nn\" (case-insensitive)  for no name and just numbered files [temporary hack]), [1] is the first number of the files to switch (int), and [2] is the second number to switch the files with (int). [3] is optional, and is a boolean (y/n) that defaults to false (n). It is used to denote whether to move additional extension files like \"file.png.meta\". If yes or true, will move files with additional extensions like that. If no or false, it will leave them alone.\n");
+            Console.WriteLine("\n\n");
+            Console.WriteLine("-help | --help | -h | --h = This command. Scroll up for help.\n");
             return;
         }
 
@@ -137,7 +139,8 @@ class MainClass
         recursiveSearch = false;
 
         //Input from args.
-        objectName = args[1].Trim().ToLower();
+        //Set to empty object name if "nn".
+        objectName = args[1].Trim().ToLower() != "nn" ?  args[1].Trim().ToLower() : string.Empty;
         int.TryParse(args[2], out int numToMove);
         int.TryParse(args[3], out int toMoveTo);
         for (int i = 0; i < args.Length; i++)

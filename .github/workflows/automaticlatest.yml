@@ -31,4 +31,4 @@ jobs:
       uses: actions/upload-artifact@v1.0.0
       with:
         name: test
-        path: bin\**\*.exe
+        path: bin\Debug\AutoResequencer.exe
