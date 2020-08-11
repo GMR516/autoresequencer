@@ -25,7 +25,7 @@ jobs:
       run: nuget restore AutoResequencer.sln
  
     - name: Build
-      run: msbuild SimpleFrameworkApp.sln /p:Configuration=Debug
+      run: msbuild AutoResequencer.sln /p:Configuration=Debug
  
     - name: Upload Artifact
       uses: actions/upload-artifact@v1.0.0
